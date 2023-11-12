@@ -125,7 +125,7 @@ li {
   color: #ffffff;
 }
 .btn--big {
-  padding: 1.375em 5.7em;
+  padding: 1.375em 4em;
 }
 @media (min-width: 1024px) {
   .btn--big {
@@ -191,7 +191,7 @@ li {
   }
 }
 .open-section__img {
-  height: 320px;
+  height: 267px;
   -o-object-fit: cover;
      object-fit: cover;
 }
