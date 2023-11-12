@@ -1,4 +1,21 @@
 .main-title {
   font-family: $font-raleway;
   font-weight: 400;
+  &--big {
+    font-size: 35px;
+    line-height: 41px;
+    @media (min-width: $desktop) {
+      font-size: 49px;
+      line-height: 57px;
+    }
+  }
+
+  &--medium {
+    font-size: 30px;
+    line-height: 35px;
+    @media (min-width: $desktop) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
 }
