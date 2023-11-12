@@ -1,0 +1,77 @@
+.statistics {
+  font-family: $font-raleway;
+  text-align: center;
+  padding: 2.825em 0;
+
+  &__header {
+    font-size: 30px;
+    @media (min-width: $desktop) {
+      font-size: 36px;
+    }
+  }
+  &__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 176px;
+  }
+  &__img {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    &--pink {
+      background-color: $color-pink;
+    }
+    &--blue {
+      background-color: $color-blue;
+    }
+    &--green {
+      background-color: $color-green;
+    }
+    &::before {
+      width: 52px;
+      height: 42px;
+      position: absolute;
+    }
+    &--men::before {
+      content: url("/assets//Person.svg");
+      top: 0;
+      right: 20px;
+    }
+    &--eye::before {
+      content: url("/assets/Eye.svg");
+      top: 12.5px;
+      right: 50px;
+    }
+    &--catalog::before {
+      content: url("/assets/Catalog.svg");
+      top: 5px;
+    }
+  }
+  &__number {
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.2485em;
+    font-weight: 800;
+    margin: 0.4em 0 0.6em 0;
+  }
+  &__text {
+    font-size: 17px;
+    line-height: 1.17em;
+    color: $color-medium-grey;
+    padding: 0 1.25em;
+  }
+}

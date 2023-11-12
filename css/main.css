@@ -136,6 +136,11 @@ li {
   background-color: #08a6e4;
 }
 
+.main-title {
+  font-family: "Raleway";
+  font-weight: 400;
+}
+
 .header {
   width: 100%;
   box-shadow: 0px 0.1875em 0.375em rgba(0, 0, 0, 0.1607843137);
@@ -195,5 +200,85 @@ li {
     max-width: 100vw;
     height: auto;
   }
+}
+
+.statistics {
+  font-family: "Raleway";
+  text-align: center;
+  padding: 2.825em 0;
+}
+.statistics__header {
+  font-size: 30px;
+}
+@media (min-width: 1024px) {
+  .statistics__header {
+    font-size: 36px;
+  }
+}
+.statistics__elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .statistics__elements {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.statistics__item {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 176px;
+}
+.statistics__img {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+}
+.statistics__img--pink {
+  background-color: #fb3b64;
+}
+.statistics__img--blue {
+  background-color: #08a6e4;
+}
+.statistics__img--green {
+  background-color: #55dfb4;
+}
+.statistics__img::before {
+  width: 52px;
+  height: 42px;
+  position: absolute;
+}
+.statistics__img--men::before {
+  content: url("/assets//Person.svg");
+  top: 0;
+  right: 20px;
+}
+.statistics__img--eye::before {
+  content: url("/assets/Eye.svg");
+  top: 12.5px;
+  right: 50px;
+}
+.statistics__img--catalog::before {
+  content: url("/assets/Catalog.svg");
+  top: 5px;
+}
+.statistics__number {
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.2485em;
+  font-weight: 800;
+  margin: 0.4em 0 0.6em 0;
+}
+.statistics__text {
+  font-size: 17px;
+  line-height: 1.17em;
+  color: #a5a5a5;
+  padding: 0 1.25em;
 }
 /*# sourceMappingURL=main.css.map */
