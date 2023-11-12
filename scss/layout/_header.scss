@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  box-shadow: 0px 0.1875em 0.375em $color-medium-light-grey;
+  position: relative;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-link {
+    font-family: $font-raleway;
+    font-weight: lighter;
+    color: $color-blue;
+  }
+}

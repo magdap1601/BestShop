@@ -1,0 +1,49 @@
+.nav {
+  padding: 1em 0;
+  position: absolute;
+  top: 2.7em;
+  left: 0;
+  box-shadow: 0px 0.1875em 0.375em $color-medium-light-grey;
+  padding: 1.5em 0 1.5em 2em;
+  padding-left: 2em;
+  width: 100vw;
+  display: none;
+  @media (min-width: $desktop) {
+    display: block;
+    width: 40%;
+    position: static;
+    box-shadow: none;
+  }
+  &__list {
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-top: 0.6em;
+    &:first-child {
+      margin-top: 0;
+    }
+    @media (min-width: $desktop) {
+      margin: 0;
+    }
+  }
+  &__item-link {
+    font-size: 11px;
+    color: $color-medium-grey;
+    font-weight: bold;
+    letter-spacing: 0.28em;
+    &:hover {
+      color: $color-black;
+      @media (min-width: $desktop) {
+        border-bottom: 0.36em solid #08a6e4;
+        padding-bottom: 2.18em;
+      }
+    }
+  }
+  &--visible {
+    display: block;
+  }
+}
