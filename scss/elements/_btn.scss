@@ -1,0 +1,17 @@
+.btn {
+  display: block;
+  font-family: $font-open-sans;
+  font-weight: bold;
+  border-radius: 2.5em;
+  color: $color-white;
+
+  &--big {
+    padding: 1.375em 5.7em;
+    @media (min-width: $desktop) {
+      padding: 1.375em 9.81em;
+    }
+  }
+  &--blue {
+    background-color: $color-blue;
+  }
+}

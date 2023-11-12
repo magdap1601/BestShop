@@ -1,0 +1,37 @@
+.open-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 6.25em;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__header {
+    font-size: 35px;
+    font-family: $font-raleway;
+    font-weight: 400;
+    @media (min-width: $desktop) {
+      font-size: 49px;
+    }
+  }
+  &__paragraph {
+    padding: 1.25em 0 1.75em 0;
+    line-height: 1.375em;
+    width: 300px;
+    text-align: center;
+    @media (min-width: $desktop) {
+      width: 100%;
+    }
+  }
+  &__img {
+    height: 320px;
+    object-fit: cover;
+    @media (min-width: $desktop) {
+      max-width: 100vw;
+      height: auto;
+    }
+  }
+}
